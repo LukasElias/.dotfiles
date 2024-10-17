@@ -1,0 +1,10 @@
+[Added Associations]
+audio/vnd.wave=vlc-5.desktop;
+image/jpeg=vlc-3.desktop;vlc-2.desktop;
+video/mp4=vlc-4.desktop;
+text/plain=Neovim.desktop;
+
+[Default Applications]
+audio/vnd.wave=vlc-5.desktop;
+image/jpeg=vlc-3.desktop;
+video/mp4=vlc-4.desktop;

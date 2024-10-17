@@ -1,0 +1,14 @@
+*/
+
+!.config/
+!.config/*
+
+.config/gh
+
+.bash_history
+.lesshst
+.python_history
+.steampid
+.profile
+.gitconfig
+log.txt
