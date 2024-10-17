@@ -1,0 +1,7 @@
+[Bookmarks]
+[Recent]
+/home/LukasElias/Billeder/wallpapers/
+/home/LukasElias/3d models/
+!Pictures
+/home/LukasElias/Billeder/
+/home/LukasElias/.fonts/

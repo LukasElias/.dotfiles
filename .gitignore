@@ -1,14 +1,17 @@
-*/
+/*/
 
 !.config/
 !.config/*
 
 .config/gh
+.config/pulse
 
 .bash_history
 .lesshst
 .python_history
 .steampid
+.steampath
+.pulse-cookie
 .profile
 .gitconfig
 log.txt
