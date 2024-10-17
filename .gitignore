@@ -14,4 +14,7 @@
 .pulse-cookie
 .profile
 .gitconfig
-log.txt
+
+/*.*
+
+!README.md
