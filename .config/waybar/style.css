@@ -29,44 +29,19 @@
 }
 
 #clock,
-#battery,
 #cpu,
 #memory,
 #temperature,
-#network,
 #pulseaudio,
-#custom-media,
-#tray,
-#mode,
-#custom-power,
-#custom-notification,
-#idle_inhibitor {
+#custom-notification {
     padding: 0 10px;
 }
 #mode {
     color: #cc3436;
     font-weight: bold;
 }
-#custom-power {
-    background-color: rgba(0,119,179,0.6);
-    border-radius: 100px;
-    margin: 5px 5px;
-    padding: 1px 1px 1px 4px;
-}
 /* -----Indicators---- */
-#idle_inhibitor.activated {
-    color: #2dcc36;
-}
 #pulseaudio.muted {
-    color: #cc3436;
-}
-#battery.charging {
-    color: #2dcc36;
-}
-#battery.warning:not(.charging) {
-	color: #e6e600;
-}
-#battery.critical:not(.charging) {
     color: #cc3436;
 }
 #temperature.critical {

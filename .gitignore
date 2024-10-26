@@ -5,6 +5,7 @@
 
 .config/gh
 .config/pulse
+.config/rclone
 
 .bash_history
 .lesshst

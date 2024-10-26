@@ -13,5 +13,6 @@ export QT_QPA_PLATFORMTHEME=qt6ct
 export BROWSER=/usr/bin/firefox
 export EDITOR=/usr/bin/nvim
 export SUDO_EDITOR=/usr/bin/nvim
+export TERMINAL=/usr/bin/kitty
 
 . "$HOME/.cargo/env"
