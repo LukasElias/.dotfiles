@@ -1,17 +1,27 @@
+@import "mocha.css";
+
 * {
 	font-family: Agave Nerd Font, Roboto, Helvetica, Arial, sans-serif;
-	font-weight: normal;
-	color: #000;
 	border: none;
 	border-radius: 0;
 }
 
-window#waybar {
+window#waybar, #workspaces button:not(.active) {
 	background: transparent;
-	border-bottom: 3px dotted black;
+	color: @base;
+}
+
+#workspaces button.active {
+	background: @base;
+	border-radius: 0 0 50% 50%;
+	color: @text;
+}
+
+#workspaces button {
+	padding: 0 12px;
 }
 
 .modules-right .module {
-	padding: 0 10px 0 0;
-	margin: 0 5px 0 0;
+	padding-right: 10px;
+	margin-right: 5px;
 }

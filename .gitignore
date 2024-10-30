@@ -6,6 +6,8 @@
 .config/gh
 .config/pulse
 .config/rclone
+.config/dconf
+.config/rncbc.org
 
 .bash_history
 .lesshst
