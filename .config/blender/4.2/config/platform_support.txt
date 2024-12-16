@@ -1,4 +1,0 @@
-{AMD/AMD Radeon Graphics (radeonsi, raphael_mendocino, LLVM 18.1.8, DRM 3.57, 6.10.10-arch1-1)/4.6 (Core Profile) Mesa 24.2.3-arch1.1}=SUPPORTED
-{AMD/AMD Radeon RX 7700 XT (radeonsi, navi32, LLVM 18.1.8, DRM 3.57, 6.10.10-arch1-1)/4.6 (Core Profile) Mesa 24.2.3-arch1.1}=SUPPORTED
-{AMD/AMD Radeon RX 7700 XT (radeonsi, navi32, LLVM 18.1.8, DRM 3.59, 6.11.2-arch1-1)/4.6 (Core Profile) Mesa 24.2.4-arch1.1}=SUPPORTED
-{AMD/AMD Radeon RX 7700 XT (radeonsi, navi32, LLVM 18.1.8, DRM 3.59, 6.11.3-arch1-1)/4.6 (Core Profile) Mesa 24.2.4-arch1.1}=SUPPORTED

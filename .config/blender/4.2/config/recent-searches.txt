@@ -1,8 +1,0 @@
-Add ▸ Text
-Gradient Texture ▸ Color
-Hue/Saturation/Value ▸ Color
-Generate ▸ Subdivision Surface
- F Darken
- F Draw
- F Subtract
- F Add

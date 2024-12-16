@@ -1,0 +1,53 @@
+* {
+	font-family: JetBrainsMonoNerdFontMono;
+	font-size: 24px;
+	transition-property: background-color;
+	transition-duration: 0.2s;
+}
+
+window {
+	background-color: rgba(17, 17, 27, 0.7); /* Catppuccin Crust color in mocha */
+	border-radius: 10px;
+}
+
+button {
+	color: rgb(205, 214, 244); /* Catppuccin Text color in mocha */
+	background-color: rgb(30, 30, 46); /* Catppuccin Base color in mocha */
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 50px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 15%;
+	margin: 15px;
+}
+
+button:active,
+button:hover,
+button:focus {
+	background-color: rgb(49, 50, 68); /* Catppuccin Surface 0 color in mocha */
+}
+
+#lock {
+	background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+}
+
+#logout {
+	background-image: image(url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+}
+
+#suspend {
+	background-image: image(url("/usr/share/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+	background-image: image(url("/usr/share/wlogout/icons/hibernate.png"), url("/usr/local/share/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+	background-image: image(url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+	background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+}

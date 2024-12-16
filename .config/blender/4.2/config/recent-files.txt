@@ -1,8 +1,0 @@
-/home/LukasElias/3d models/luke.blend
-/home/LukasElias/3d models/a big hand.blend
-/home/LukasElias/3d models/a big hand.blend1
-/home/LukasElias/3d models/me.blend
-/home/LukasElias/3d models/metame.blend
-/home/LukasElias/3d models/ferrari.blend1
-/home/LukasElias/3d models/ferrari.blend
-/home/LukasElias/3d models/shoe.blend

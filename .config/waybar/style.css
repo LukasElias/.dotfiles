@@ -11,17 +11,27 @@ window#waybar, #workspaces button:not(.active) {
 	color: @base;
 }
 
-#workspaces button.active {
-	background: @base;
-	border-radius: 0 0 50% 50%;
-	color: @text;
-}
-
 #workspaces button {
 	padding: 0 12px;
 }
 
+#workspaces button.active,
+#audio,
+#connectivity,
+#hardware,
+#extra {
+	background: @base;
+	border-radius: 0 0 15px 15px;
+	color: @text;
+}
+
+#audio,
+#connectivity,
+#hardware,
+#extra {
+	padding-left: 15px;
+}
+
 .modules-right .module {
-	padding-right: 10px;
-	margin-right: 5px;
+	padding-right: 15px;
 }
