@@ -7,7 +7,7 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w \$\[\033[00m\] '
+eval "$(starship init bash)"
 
 export QT_QPA_PLATFORMTHEME=qt6ct
 export BROWSER=/usr/bin/firefox
@@ -15,4 +15,13 @@ export EDITOR=/usr/bin/nvim
 export SUDO_EDITOR=/usr/bin/nvim
 export TERMINAL=/usr/bin/kitty
 
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
+--color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
+--color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
+--color=selected-bg:#45475a \
+--multi"
+
 . "$HOME/.cargo/env"
+
+source <(fzf --bash)

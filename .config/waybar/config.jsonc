@@ -6,6 +6,7 @@
 
 	"modules-left": [
 		"hyprland/workspaces",
+		"tray",
 		"clock"
 	],
 	"modules-center": [
@@ -50,7 +51,11 @@
 	},
 
 	"hyprland/workspaces": {
-		"format": "{icon}{windows}"
+		"format": "{icon}"
+	},
+	"tray": {
+		"spacing": 6,
+		"show-passive-items": true
 	},
 	"clock": {
 		"timezone": "Europe/Copenhagen",
