@@ -7,7 +7,6 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-eval "$(starship init bash)"
 
 export QT_QPA_PLATFORMTHEME=qt6ct
 export BROWSER=/usr/bin/firefox
@@ -25,3 +24,5 @@ export FZF_DEFAULT_OPTS=" \
 . "$HOME/.cargo/env"
 
 source <(fzf --bash)
+
+eval "$(starship init bash)"
