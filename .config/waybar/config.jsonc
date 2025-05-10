@@ -85,10 +85,9 @@
 			"playing": "󰏤",
 			"paused": "󰐊"
 		},
-		"on-click-right": "playerctl --player spotify next",
+		"on-click-right": "playerctl next",
 		"tooltip": false,
-		"title-len": 40,
-		"player": "spotify"
+		"title-len": 40
 	},
 	"wireplumber": {
 		"tooltip": false,

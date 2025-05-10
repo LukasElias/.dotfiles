@@ -7,7 +7,6 @@ add_newline = false
 palette = "catppuccin_mocha"
 
 [os]
-format =" [I use $type btw $symbol]($style)"
 disabled = false
 style = "bold green"
 
