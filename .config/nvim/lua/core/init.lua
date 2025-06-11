@@ -1,4 +1,4 @@
-require("Lukas_Elias.core.map")
+require("core.map")
 
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '

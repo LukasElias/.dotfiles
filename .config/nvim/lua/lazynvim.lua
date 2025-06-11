@@ -12,6 +12,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  { import = 'Lukas_Elias.plugins' },
-  { import = 'Lukas_Elias.plugins.lsp' },
+  { import = 'plugins' },
+  { import = 'plugins.lsp' },
 })
