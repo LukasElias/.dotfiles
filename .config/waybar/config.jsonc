@@ -30,7 +30,6 @@
 	"group/connectivity": {
 		"orientation": "horizontal",
 		"modules": [
-			"bluetooth",
 			"network"
 		]
 	},
@@ -99,8 +98,6 @@
 			" ",
 			" "
 		]
-	},
-	"bluetooth": {
 	},
 	"network": {
 		"format-ethernet": "󰈀 ",

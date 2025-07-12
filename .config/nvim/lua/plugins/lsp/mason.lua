@@ -1,17 +1,11 @@
 return {
-	'williamboman/mason.nvim',
+	'mason-org/mason.nvim',
 	event = { 'BufReadPre', 'BufNewFile' },
 	dependencies = {
-		'williamboman/mason-lspconfig.nvim',
+		'mason-org/mason-lspconfig.nvim',
 	},
 	config = function()
 		local on_attach = function(_, bufnr)
-			-- NOTE: Remember that lua is a real programming language, and as such it is possible
-			-- to define small helper and utility functions so you don't have to repeat yourself
-			-- many times.
-			--
-			-- In this case, we create a function that lets us more easily define mappings specific
-			-- for LSP related items. It sets the mode, buffer and description for us each time.
 			local nmap = function(keys, func, desc)
 				if desc then
 					desc = 'LSP: ' .. desc
@@ -84,7 +78,7 @@ return {
 			ensure_installed = vim.tbl_keys(servers),
 		})
 
-		mason_lspconfig.setup_handlers({
+		mason_lspconfig.setup({
 			function(server_name)
 				require('lspconfig')[server_name].setup({
 					capabilities = capabilities,
