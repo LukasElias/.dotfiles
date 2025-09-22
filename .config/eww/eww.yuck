@@ -1,0 +1,40 @@
+(defwindow lyrics-window
+	:monitor 0
+	:stacking "fg"
+	:geometry (geometry
+		:width "15%"
+		:height "80%"
+		:x "2.5%"
+		:anchor "center right")
+	(lyrics)
+)
+
+(defwidget lyrics []
+	(scroll
+		:hscroll false
+		(box
+			:orientation "v"
+			:spacing 75
+			(for paragraph-json in lyrics-json
+				(paragraph :json paragraph-json)
+			)
+		)
+	)
+)
+
+(defwidget paragraph [json]
+	(box
+		:orientation "v"
+		:spacing 10
+		(for line in json
+			(label
+				:text {line.text}
+				:class {line.time <= song-progress ? "lyric-line highlight" : "lyric-line"}
+			)
+		)
+	)
+)
+
+(deflisten lyrics-json `~/.config/eww/scripts/lyrics.sh`)
+
+(defvar song-progress 47)

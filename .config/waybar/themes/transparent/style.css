@@ -4,11 +4,11 @@ window {
 	color: @text;
 }
 
-* {
+window#waybar {
+	background: transparent;
 	font-family: Agave Nerd Font, Roboto, Helvetica, Arial, sans-serif;
 	border: none;
 	border-radius: 0;
-	background: transparent;
 }
 
 #workspaces button {

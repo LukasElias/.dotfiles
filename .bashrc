@@ -9,7 +9,6 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
 export QT_QPA_PLATFORMTHEME=qt6ct
-export BROWSER=/usr/bin/firefox
 export EDITOR=/usr/bin/nvim
 export SUDO_EDITOR=/usr/bin/nvim
 export TERMINAL=/usr/bin/kitty
@@ -24,6 +23,7 @@ export FZF_DEFAULT_OPTS=" \
 . "$HOME/.cargo/env"
 
 source <(fzf --bash)
+source <(eww shell-completions --shell bash)
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd

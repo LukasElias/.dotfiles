@@ -11,7 +11,7 @@ return {
 					desc = 'LSP: ' .. desc
 				end
 
-				vim.keymap.set('n', keys, func, { buffer = bufnr, desc = desc })
+				vim.keymap.set('n', keys, func, { buffer = bufnr, desc = 'LSP: ' .. desc })
 			end
 
 			nmap('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
