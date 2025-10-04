@@ -5,13 +5,19 @@ return {
 	config = function()
 		require("catppuccin").setup({
 			flavour = "mocha", -- latte, frappe, macchiato, mocha
-			background = {     -- :h background
+			background = { -- :h background
 				light = "latte",
 				dark = "mocha",
 			},
-			show_end_of_buffer = false,     -- shows the '~' characters after the end of buffers
+			transparent_background = true,
+			float = {
+				transparent = true, -- enable transparent floating windows
+				solid = false, -- use solid styling for floating windows, see |winborder|
+			},
+			show_end_of_buffer = false, -- shows the '~' characters after the end of buffers
+			term_colors = false, -- sets terminal colors (e.g. `g:terminal_color_0`)
 			dim_inactive = {
-				enabled = true,
+				enabled = false,
 				shade = "dark",
 				percentage = 0.5,
 			},
@@ -22,13 +28,11 @@ return {
 				comments = { "italic" },
 				conditionals = { "italic" },
 			},
+			auto_integrations = true,
 			integrations = {
+				mason = true,
 				cmp = true,
-				gitsigns = true,
-				nvimtree = true,
-				treesitter = true,
-				notify = true,
-				-- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
+				which_key = true,
 			},
 		})
 

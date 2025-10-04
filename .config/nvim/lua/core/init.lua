@@ -27,6 +27,8 @@ vim.wo.signcolumn = 'yes'
 vim.opt.updatetime = 350
 vim.opt.timeoutlen = 300
 
+vim.opt.formatoptions = { c = false }
+
 vim.opt.linebreak = true
 
 vim.opt.completeopt = {
