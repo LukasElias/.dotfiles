@@ -1,0 +1,13 @@
+# Config relating to things outside of Lazygit like how files are opened,
+# copying to clipboard, etc
+os:
+  # Command for editing a file. Should contain "{{filename}}".
+  editPreset: "nvim"
+
+  # CopyToClipboardCmd is the command for copying to clipboard.
+  # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#custom-command-for-copying-to-and-pasting-from-clipboard
+  copyToClipboardCmd: "wl-copy {{text}}"
+
+  # ReadFromClipboardCmd is the command for reading the clipboard.
+  # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#custom-command-for-copying-to-and-pasting-from-clipboard
+  readFromClipboardCmd: "wl-paste"

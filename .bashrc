@@ -7,6 +7,7 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+alias clear='clear && printf "\e[3J"'
 
 export QT_QPA_PLATFORMTHEME=qt6ct
 export EDITOR=/usr/bin/nvim
