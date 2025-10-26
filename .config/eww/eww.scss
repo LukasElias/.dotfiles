@@ -1,10 +1,105 @@
-.lyric-line {
-	font-size: 1.5rem;
-	padding: 0;
-	margin: 0;
+window {
+	background-color: transparent;
 }
 
-.highlight {
-	color: red;
-	font-weight: bold;
+.eww-media {
+	$nerd: "Agave Nerd Font";
+	$sans: "Noto Sans";
+	
+	$background: #1e1e2e;
+	$text: #cdd6f4;
+	$mauve: #cba6f7;
+	$secondary: #f38ba8;
+	
+	$buttonRoundess: 0.4rem;
+	$roundness: 1rem;
+	$coverSize: 150px;
+	
+	font-family: $sans, $nerd;
+	
+	background-color: $background;
+	color: $text;
+	border-radius: $roundness;
+
+	button {
+		border: none;
+	}
+	
+	.info {
+		background-color: transparent;
+		color: $text;
+	}
+
+	.cover {
+		background-size: $coverSize;
+		min-width: $coverSize;
+		min-height: $coverSize;
+		border-radius: $roundness;
+	}
+	
+	.control {
+		margin: 0 1rem;
+		font-family: $sans, $nerd;
+		button {
+			padding: 0.2rem 0.8rem;
+			border-radius: $buttonRoundess;
+			color: $text;
+			background-color: $secondary;
+			&:hover {
+				color: $text;
+				background-color: $mauve;
+			}
+		}
+		.shuffled,
+		.play {
+			color: $text;
+			background-color: $mauve;
+		}
+	}
+	
+	.line {
+		margin: .5rem;
+		padding: 0;
+		.active {
+			background-color: $background;
+			font-size: 1.5rem;
+			font-weight: 800;
+		}
+		.passive {
+			background-color: $background;
+		}
+		&:hover {
+			font-weight: 800;
+		}
+	}
+	
+	.close {
+		button {
+			background-color: $mauve;
+			color: $text;
+			padding: 2.5px 5px;
+			padding-right: 10px;
+			margin-right: 0px;
+			border-radius: 15px;
+			&:hover {
+				background-color: $secondary;
+				color: $text;
+			}
+		}
+	}
+	
+	scale trough highlight {
+		background-color: $mauve;
+		padding: 0.4rem 0;
+		color: $text;
+		border-radius: 10px;
+	}
+	
+	scale trough {
+		all: unset;
+		background-color: $secondary;
+		border-radius: 3rem;
+		min-width: 3rem;
+		margin-right: 7px;
+	}
 }
