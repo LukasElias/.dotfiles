@@ -1,4 +1,4 @@
-(deflisten lyrics :initial `{"text": ""}` `waybar-lyric -qdm150 -fpartial`)
+(deflisten lyrics `waybar-lyric -qdm150 -fpartial`)
 
 (defwindow media []
 	:monitor 0
@@ -65,21 +65,26 @@
 				)
 			)
 		)
-		(box
-			:orientation "v"
-			:spacing 8
-			:space-evenly false
-			(for lyric in {lyrics.context}
-				(button
-					:class "line"
-					:onclick `playerctl --player=${lyrics.info.player} position ${lyric.time}`
-					(label
-						:class {lyric.active ? "active" : "passive"}
-						:justify "center"
-						:text {lyric.line != "" ? lyric.line : "󰝚"}
-						:show-truncated false
-						:wrap true
-						:wrap-mode "word"
+		(scroll
+			:hscroll false
+			:vscroll true
+			:height 500
+			(box
+				:orientation "v"
+				:spacing 8
+				:space-evenly false
+				(for lyric in {lyrics.lines}
+					(button
+						:class "line"
+						:onclick `playerctl --player=${lyrics.info.player} position ${lyric.time}`
+						(label
+							:class {lyric.time < lyrics.info.position ? "active" : "passive"}
+							:justify "center"
+							:text {lyric.line != "" ? lyric.line : "󰝚"}
+							:show-truncated false
+							:wrap true
+							:wrap-mode "word"
+						)
 					)
 				)
 			)

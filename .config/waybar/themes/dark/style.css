@@ -1,37 +1,45 @@
 @import "../../mocha.css";
 
-* {
+window {
+	color: @text;
+}
+
+window#waybar {
+	background: transparent;
 	font-family: Agave Nerd Font, Roboto, Helvetica, Arial, sans-serif;
 	border: none;
 	border-radius: 0;
-}
-
-window#waybar, #workspaces button:not(.active) {
-	background: transparent;
-	color: @base;
 }
 
 #workspaces button {
 	padding: 0 12px;
 }
 
-#workspaces button.active,
+#tray,
+#clock,
+#window,
 #audio,
 #connectivity,
 #hardware,
 #extra {
 	background: @base;
 	border-radius: 0 0 15px 15px;
-	color: @text;
-}
-
-#audio,
-#connectivity,
-#hardware,
-#extra {
 	padding-left: 15px;
 }
 
+#workspaces {
+	background: @base;
+	border-radius: 0 0 15px 15px;
+}
+
+#workspaces button.active {
+	background: @mauve;
+	border-radius: 0 0 15px 15px;
+}
+
+#tray,
+#clock,
+#window,
 .modules-right .module {
 	padding-right: 15px;
 }

@@ -3,7 +3,7 @@
 killall waybar
 pkill waybar
 
-theme="transparent"
+theme="dark"
 
 config_file="config.jsonc"
 style_file="themes/$theme/style.css"
