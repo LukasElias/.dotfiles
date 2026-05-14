@@ -34,6 +34,10 @@ return {
 				cmp = true,
 				which_key = true,
 			},
+			highlight = {
+				enable = true,
+				additional_vim_regex_highlighting = false
+			},
 		})
 
 		vim.cmd.colorscheme("catppuccin")
